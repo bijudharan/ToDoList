@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(https://i.pinimg.com/736x/c6/12/41/c61241e8ed444e2e607214ad7b4c5731.jpg) no-repeat;
+    background-size:cover;
+    background-position: center;
+    
+    
+
+}
+.wrapper{
+    margin: 120px auto;
+    background: transparent;
+    max-width: 400px;
+    width: 100%;
+    backdrop-filter: blur(15px);
+    border-radius: 5px;
+    padding: 25px 20px 235px 20px;
+}
+.wrapper header{
+    text-align: center;
+    justify-content: end;
+    font-size: 17px;
+    
+}
+.wrapper .inputField{
+    background: transparent;
+    display: flex;
+    height: 45px;
+    width: 100%;
+    margin: 20px 0;
+}
+.inputField input{
+    color: white;
+    background: transparent;
+    width: 85%;
+    height: 100%;
+    border: 1px solid black;
+    font-size: 17px ;
+    border-radius: 3px ;
+    padding-left: 15px;
+    outline: none;
+}
+.inputField button{
+    background: #34eb74;
+    color:black;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 5px;
+    pointer-events: none;
+}
+.inputField button.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+.wrapper .todoList{
+    max-height: 250px;
+    overflow: auto;
+}
+.todoList li{
+    list-style: none;
+    color: white;
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    background: transparent;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    padding: 0 15px;
+    cursor: default;
+    overflow: hidden;
+}
+.todoList li button{
+    position: absolute;
+    right: -55px;
+    background: rgb(218, 46, 46);
+    color: white;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 5px;
+    height: 45px;
+    transition: all 300ms ease;
+}
+.todoList li:hover button{
+    right: 0px;
+}
+.wrapper .footer{
+    color: white;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.footer button{
+    background: rgb(133, 194, 227);
+    color: black;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 5px;
+    height: 30px;
+}
